@@ -15,22 +15,27 @@ export default function About() {
         />
         <div className="relative z-20 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Our Story</h1>
-          <p className="text-xl md:text-2xl">Crafting exceptional mead in the heart of Phoenix</p>
+          <p className="text-xl md:text-2xl">A Journey of Passion and Tradition</p>
         </div>
       </section>
 
       <div className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          {/* Founders Section */}
-          <section className="mb-16 text-center">
-            <h2 className="text-3xl font-bold mb-4 text-[#5C2E2E]">Meet Mark & Kira</h2>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg mb-4">
-                Mark and Kira&apos;s journey into mead-making began with a shared passion for craft beverages and Arizona&apos;s rich agricultural heritage. What started as a hobby quickly evolved into a mission to create exceptional meads that showcase the unique flavors of the Southwest.
-              </p>
-              <p className="text-lg">
-                Their dedication to quality and innovation has made Moon Valley Meadery a beloved destination for mead enthusiasts and newcomers alike.
-              </p>
+          {/* Story Section */}
+          <section className="mb-16">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-8 text-[#5C2E2E]">Welcome to Moon Valley Meadery</h2>
+              <div className="space-y-6 text-lg">
+                <p>
+                  Nestled in the heart of our enchanting valley, Moon Valley Meadery celebrates the ancient craft of mead-making. This blossomed over the past four years, growing from a passionate hobby into something truly special.
+                </p>
+                <p>
+                  Born from our passion for crafting unique and delightful meads, we take pride in not only the ingredients we use but our artisanal techniques. Our mead is cherished among friends and family, but has also made cherished birthday gifts, symbolizing love and celebration.
+                </p>
+                <p>
+                  At Moon Valley Meadery, every bottle tells a story, and we invite you to join us on this sweet journey as we share our passion for mead with the world. Cheers to life, laughter, and mead!
+                </p>
+              </div>
             </div>
           </section>
 
@@ -39,32 +44,65 @@ export default function About() {
             <h2 className="text-3xl font-bold text-center mb-12 text-[#5C2E2E]">Our Process</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-[#5C2E2E]">1. Sourcing</h3>
-                <p>We work closely with local beekeepers and farmers to source the finest Arizona honey and ingredients.</p>
+                <h3 className="text-xl font-semibold mb-4 text-[#5C2E2E]">1. Local Sourcing</h3>
+                <p>We carefully select the finest local raw honey to create our traditional mead, ensuring quality in every batch.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-[#5C2E2E]">2. Fermentation</h3>
-                <p>Our meads are carefully fermented using traditional methods, with each batch receiving individual attention.</p>
+                <h3 className="text-xl font-semibold mb-4 text-[#5C2E2E]">2. Pure Ingredients</h3>
+                <p>Using only purified water, quality yeast, and raw honey, we keep our mead pure and true to tradition.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-[#5C2E2E]">3. Aging</h3>
-                <p>We believe in giving our meads the time they need to develop their full character and complexity.</p>
+                <h3 className="text-xl font-semibold mb-4 text-[#5C2E2E]">3. Artisanal Care</h3>
+                <p>Each batch is crafted with attention to detail, allowing the natural flavors to develop perfectly.</p>
               </div>
             </div>
           </section>
 
-          {/* Location Section */}
-          <section className="bg-[#5C2E2E] text-white p-8 rounded-lg">
-            <h2 className="text-3xl font-bold mb-4">Visit Us</h2>
-            <p className="text-lg mb-4">
-              Our tasting room is located in the heart of Phoenix, where you can sample our latest creations and learn more about the art of mead-making.
+          {/* Contact Section */}
+          <section className="bg-[#5C2E2E] text-white p-8 rounded-lg text-center">
+            <h2 className="text-3xl font-bold mb-4">Connect With Us</h2>
+            <p className="text-lg mb-6">
+              Share in our passion for traditional mead-making and join our growing community of mead enthusiasts.
             </p>
-            <a
-              href="/contact"
-              className="inline-block bg-[#D4A437] hover:bg-[#C29430] text-white font-bold py-3 px-6 rounded-full transition duration-300"
-            >
-              Get Directions
-            </a>
+            <div className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="text-center">
+                  <h3 className="text-xl font-semibold mb-2">Mark Miller</h3>
+                  <p className="text-sm mb-1">Owner</p>
+                  <a href="tel:602-935-1417" className="text-[#D4A437] hover:text-[#C29430] transition-colors">602-935-1417</a>
+                  <br />
+                  <a href="mailto:MoonValleyMeadery@gmail.com" className="text-[#D4A437] hover:text-[#C29430] transition-colors">
+                    MoonValleyMeadery@gmail.com
+                  </a>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-xl font-semibold mb-2">Kira Miller</h3>
+                  <p className="text-sm mb-1">Owner</p>
+                  <a href="tel:602-935-1417" className="text-[#D4A437] hover:text-[#C29430] transition-colors">602-935-1417</a>
+                  <br />
+                  <a href="mailto:MoonValleyMeadery@gmail.com" className="text-[#D4A437] hover:text-[#C29430] transition-colors">
+                    MoonValleyMeadery@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="pt-4">
+                <a 
+                  href="https://www.moonvalleymeadery.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-[#D4A437] hover:text-[#C29430] transition-colors"
+                >
+                  www.moonvalleymeadery.com
+                </a>
+              </div>
+              <a
+                href="/contact"
+                className="inline-block bg-[#D4A437] hover:bg-[#C29430] text-white font-bold py-3 px-6 rounded-full transition duration-300"
+              >
+                Get in Touch
+              </a>
+              <p className="text-xs">Produced & bottled in Phoenix, AZ USA</p>
+            </div>
           </section>
         </div>
       </div>
