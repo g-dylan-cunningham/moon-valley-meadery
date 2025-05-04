@@ -10,10 +10,34 @@ const bioRhyme = BioRhyme({
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F4F0E6]">
-      {/* Main Content Row */}
-      <div className="lg:grid lg:grid-cols-12 lg:min-h-[80vh]">
-        {/* Content Section - Left Side */}
-        <div className="lg:col-span-5 p-8 flex flex-col">
+      {/* Responsive Main Content Row */}
+      <div className="flex flex-col lg:grid lg:grid-cols-12 lg:min-h-[80vh] lg:gap-0 gap-0 px-0">
+        {/* Hero Section - Top on mobile, right on desktop */}
+        <div className="order-1 lg:order-2 lg:col-span-7 pt-0 pb-0 px-0 lg:px-0 lg:pt-8 lg:pb-8">
+          <div className="bg-white lg:rounded-lg shadow-md overflow-hidden relative w-full h-[70vh] lg:h-full lg:w-full p-0 m-0">
+            <Image
+              src="/mvm-moon-bee-centered-final.png"
+              alt="Moon Valley Meadery Hero Image - Moon and Bee Centered"
+              fill
+              sizes="(max-width: 1024px) 100vw, 58.33vw"
+              className="object-cover"
+              priority
+            />
+            {/* Centered logo text overlay */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 lg:top-[5%] pointer-events-none w-full flex justify-center">
+              <Image
+                src="/MVM-logo-text.png"
+                alt="Moon Valley Meadery Logo Text"
+                width={400}
+                height={120}
+                className="max-w-[65%] lg:max-w-[80%] min-w-[250px] h-auto"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+        {/* Content Section - Below hero on mobile, left on desktop */}
+        <div className="order-2 lg:order-1 lg:col-span-5 px-0 pt-8 pb-8 lg:p-8 flex flex-col">
           {/* Product Details Section */}
           <div className="bg-white p-8 rounded-lg shadow-md mb-8 flex-grow">
             <h2 className="text-4xl font-bold mb-6 text-[#5C2E2E] leading-tight nav-font">Traditional Mead</h2>
@@ -39,23 +63,8 @@ export default function Home() {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md">
-            
             <h3 className="text-2xl font-bold mb-4 text-[#5C2E2E] nav-font">Crafted with Care</h3>
             <p className="text-lg leading-relaxed">Every bottle tells a story of tradition, craftsmanship, and the sweet essence of local ingredients.</p>
-          </div>
-        </div>
-
-        {/* Hero Section - Right Side */}
-        <div className="lg:col-span-7 p-8">
-          <div className="bg-white rounded-lg shadow-md h-full overflow-hidden relative">
-            <Image
-              src="/moon-valley-meadery-home.png"
-              alt="Moon Valley Meadery - Mead Made For You. A bottle of traditional mead displayed against a rustic background."
-              fill
-              sizes="(max-width: 768px) 100vw, 58.33vw"
-              className="object-cover"
-              priority
-            />
           </div>
         </div>
       </div>
