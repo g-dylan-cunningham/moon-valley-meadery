@@ -18,6 +18,13 @@
     --foreground: #ededed;
   }
 }
+
+@layer base {
+  p {
+    color: #171717;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

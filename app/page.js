@@ -17,23 +17,13 @@ export default function Home() {
           <div className="bg-white lg:rounded-lg shadow-md overflow-hidden relative w-full h-[70vh] lg:h-full lg:w-full p-0 m-0">
             <Image
               src="/mvm-moon-bee-centered-final.png"
-              alt="Moon Valley Meadery Hero Image - Moon and Bee Centered"
+              alt="Moon Valley Meadery log over mountains and bee moon"
               fill
               sizes="(max-width: 1024px) 100vw, 58.33vw"
               className="object-cover"
               priority
             />
-            {/* Centered logo text overlay */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 lg:top-[5%] pointer-events-none w-full flex justify-center">
-              <Image
-                src="/MVM-logo-text.png"
-                alt="Moon Valley Meadery Logo Text"
-                width={400}
-                height={120}
-                className="max-w-[65%] lg:max-w-[80%] min-w-[250px] h-auto"
-                priority
-              />
-            </div>
+
           </div>
         </div>
         {/* Content Section - Below hero on mobile, left on desktop */}
