@@ -36,16 +36,16 @@ export default function Home() {
               <div>
                 <h3 className="font-bold text-[#5C2E2E] text-2xl mb-3 nav-font">Ingredients</h3>
                 <ul className="list-disc list-inside ml-4 space-y-2">
-                  <li>Purified Water</li>
-                  <li>Local Raw Honey</li>
-                  <li>Quality Yeast</li>
+                  <li className="text-[#D4A437]">Purified Water</li>
+                  <li className="text-[#D4A437]">Local Raw Honey</li>
+                  <li className="text-[#D4A437]">Quality Yeast</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#5C2E2E] text-2xl mb-3 nav-font">Product Details</h3>
                 <ul className="list-disc list-inside ml-4 space-y-2">
-                  <li>500 ml</li>
-                  <li>13% ABV</li>
+                  <li className="text-[#D4A437]">500 ml</li>
+                  <li className="text-[#D4A437]">13% ABV</li>
                 </ul>
               </div>
               <p className="text-sm italic">Contains no added sulfites. May contain naturally occurring sulfites.</p>
@@ -63,7 +63,7 @@ export default function Home() {
       <div className="bg-[#5C2E2E]">
         <div className="max-w-7xl mx-auto px-8 py-12 text-white text-center">
           <h2 className={`text-4xl font-bold mb-6 ${bioRhyme.className}`}>Join Our Journey</h2>
-          <p className="text-lg mb-6">Experience the magic of traditional mead-making in the heart of Phoenix</p>
+          <p className="text-lg mb-6 force-text-white">Experience the magic of traditional mead-making in the heart of Phoenix</p>
           <div className="space-y-4">
             <a
               href="/contact"
@@ -71,8 +71,8 @@ export default function Home() {
             >
               Visit Our Meadery
             </a>
-            <p className="text-sm block mt-4">MoonValleyMeadery@gmail.com</p>
-            <p className="text-xs">Enjoy Responsibly</p>
+            <p className="text-sm block mt-4 force-text-white">MoonValleyMeadery@gmail.com</p>
+            <p className="text-xs force-text-white">Enjoy Responsibly</p>
           </div>
         </div>
       </div>

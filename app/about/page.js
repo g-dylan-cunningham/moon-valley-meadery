@@ -61,14 +61,14 @@ export default function About() {
           {/* Contact Section */}
           <section className="bg-[#5C2E2E] text-white p-8 rounded-lg text-center">
             <h2 className="text-3xl font-bold mb-4">Connect With Us</h2>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-[#D4A437]">
               Share in our passion for traditional mead-making and join our growing community of mead enthusiasts.
             </p>
             <div className="space-y-6">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="text-center">
                   <h3 className="text-xl font-semibold mb-2">Mark Miller</h3>
-                  <p className="text-sm mb-1">Owner</p>
+                  <p className="text-sm mb-1 text-[#D4A437]">Owner</p>
                   <a href="tel:602-935-1417" className="text-[#D4A437] hover:text-[#C29430] transition-colors">602-935-1417</a>
                   <br />
                   <a href="mailto:MoonValleyMeadery@gmail.com" className="text-[#D4A437] hover:text-[#C29430] transition-colors">
@@ -77,7 +77,7 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl font-semibold mb-2">Kira Miller</h3>
-                  <p className="text-sm mb-1">Owner</p>
+                  <p className="text-sm mb-1 text-[#D4A437]">Owner</p>
                   <a href="tel:602-935-1417" className="text-[#D4A437] hover:text-[#C29430] transition-colors">602-935-1417</a>
                   <br />
                   <a href="mailto:MoonValleyMeadery@gmail.com" className="text-[#D4A437] hover:text-[#C29430] transition-colors">
@@ -101,7 +101,7 @@ export default function About() {
               >
                 Get in Touch
               </a>
-              <p className="text-xs">Produced & bottled in Phoenix, AZ USA</p>
+              <p className="text-xs text-[#D4A437]">Produced & bottled in Phoenix, AZ USA</p>
             </div>
           </section>
         </div>

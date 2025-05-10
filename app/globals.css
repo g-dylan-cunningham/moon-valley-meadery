@@ -39,3 +39,8 @@ p {
   color: var(--foreground);
 }
 
+/* not able to override @layer base { */
+div.text-white p.force-text-white {
+  color: #fff !important;
+}
+
