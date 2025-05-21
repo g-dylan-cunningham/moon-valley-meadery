@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import SocialLinks from '../components/SocialLinks'
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -134,6 +135,10 @@ export default function Contact() {
               >
                 Get Directions
               </a>
+              <div className="mt-8">
+                <p className="text-sm mb-4 text-[#5C2E2E]">Follow us on social media</p>
+                <SocialLinks />
+              </div>
             </div>
           </div>
         </div>

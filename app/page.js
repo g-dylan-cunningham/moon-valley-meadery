@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { BioRhyme } from 'next/font/google'
+import SocialLinks from './components/SocialLinks'
+import ComingSoonModal from './components/ComingSoonModal'
 
 const bioRhyme = BioRhyme({ 
   weight: ['400', '700'],
@@ -10,6 +12,7 @@ const bioRhyme = BioRhyme({
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F4F0E6]">
+      <ComingSoonModal />
       {/* Responsive Main Content Row */}
       <div className="flex flex-col lg:grid lg:grid-cols-12 lg:min-h-[80vh] lg:gap-0 gap-0 px-0">
         {/* Hero Section - Top on mobile, right on desktop */}
@@ -59,6 +62,20 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Video Section */}
+      {/* <div className="w-full relative">
+        <div className="aspect-video">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1EqKnptCho%2F&show_text=false"
+            className="w-full h-full"
+            style={{border: 'none'}}
+            scrolling="no"
+            allowFullScreen={true}
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div> */}
+
       {/* Contact Section - Bottom */}
       <div className="bg-[#5C2E2E]">
         <div className="max-w-7xl mx-auto px-8 py-12 text-white text-center">
@@ -73,6 +90,10 @@ export default function Home() {
             </a>
             <p className="text-sm block mt-4 force-text-white">MoonValleyMeadery@gmail.com</p>
             <p className="text-xs force-text-white">Enjoy Responsibly</p>
+            <div className="mt-8">
+              <p className="text-sm mb-4 force-text-white">Follow us on social media</p>
+              <SocialLinks />
+            </div>
           </div>
         </div>
       </div>

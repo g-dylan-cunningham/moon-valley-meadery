@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import SocialLinks from '../components/SocialLinks'
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
                   Nestled in the heart of our enchanting valley, Moon Valley Meadery celebrates the ancient craft of mead-making. This blossomed over the past four years, growing from a passionate hobby into something truly special.
                 </p>
                 <p>
-                  Born from our passion for crafting unique and delightful meads, we take pride in not only the ingredients we use but our artisanal techniques. Our mead is cherished among friends and family, but has also made cherished birthday gifts, symbolizing love and celebration.
+                  Born from our passion for crafting unique and delightful meads, we take pride in not only the ingredients we use but our artisanal techniques. Our mead is cherished among friends and family, but has also made cherished wedding gifts, symbolizing love and celebration.
                 </p>
                 <p>
                   At Moon Valley Meadery, every bottle tells a story, and we invite you to join us on this sweet journey as we share our passion for mead with the world. Cheers to life, laughter, and mead!
@@ -102,6 +103,10 @@ export default function About() {
                 Get in Touch
               </a>
               <p className="text-xs text-[#D4A437]">Produced & bottled in Phoenix, AZ USA</p>
+              <div className="mt-8">
+                <p className="text-sm mb-4 text-[#D4A437]">Follow us on social media</p>
+                <SocialLinks />
+              </div>
             </div>
           </section>
         </div>
