@@ -37,7 +37,7 @@ export default function Home() {
                 <h3 className="font-bold text-[#5C2E2E] text-2xl mb-3 nav-font">Ingredients</h3>
                 <ul className="list-disc list-inside ml-4 space-y-2">
                   <li className="text-[#D4A437]">Purified Water</li>
-                  <li className="text-[#D4A437]">Local Raw Honey</li>
+                  <li className="text-[#D4A437]">Local Honey</li>
                   <li className="text-[#D4A437]">Quality Yeast</li>
                 </ul>
               </div>
